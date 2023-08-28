@@ -19,7 +19,6 @@ public class CsvDataAccess implements DataAccess{
 	        try (CSVReader reader = new CSVReader(new FileReader(csvFilePath))) {
 	            String[] nextLine;
 	            while ((nextLine = reader.readNext()) != null) {
-	                // Parse CSV data and populate persons list
 	            }
 	        } catch (IOException | CsvValidationException e) {
 	            // Handle IOException
